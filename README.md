@@ -1,5 +1,1 @@
-A simple dual-port RAM may allow only read access through one of the ports and write access through the other, in which case the same memory location cannot be accessed simultaneously through the ports since a write operation modifies the data and therefore needs to be synchronized with a read or another write operation.
 
-A dual-port RAM may be built from single-port memory cells to reduce cost or circuit complexity, and the performance penalty associated with it, which may still allow simultaneous read and write accesses to different memory locations depending on the partitioning of the memory array and having duplicate decoder paths to the partitions.
-
-A true dual-port memory has two independent ports, which means that the memory array is built from dual-port memory-cells, and the address, data, and control lines of the two ports are connected to dedicated IO controllers so that the same memory location can be read through the ports simultaneously. A write operation through one of the ports still needs to be synchronized with a read or write operation to the same memory location through the other port.
